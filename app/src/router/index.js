@@ -2,7 +2,15 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [],
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: 'Home',
+    },
+  ],
 })
 
 export default router
+
+// https://data.cityofnewyork.us/resource/5ucz-vwe8.json
