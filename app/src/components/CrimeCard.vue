@@ -1,6 +1,8 @@
 <template>
   <div class="card">
-    <h2>Crime #{{ id }}</h2>
+    <h2>
+      <u>Crime #{{ id }}</u>
+    </h2>
     <p><strong>Borough:</strong> {{ crime.boro }}</p>
     <p><strong>Location of Occurrence:</strong> {{ crime.loc_of_occur_desc }}</p>
     <p><strong>Jurisdiction Code:</strong> {{ crime.jurisdiction_code }}</p>
@@ -12,9 +14,8 @@
 <script setup>
 defineProps({
   crime: Object,
-  id: Number
-});
+  id: Number,
+})
 </script>
 
-<style>
-</style>
+<style></style>

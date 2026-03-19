@@ -15,9 +15,10 @@ const router = createRouter({
       name: 'apidata',
       component: ApiData,
     },
+    // {
+    //   path: ''
+    // }
   ],
 })
 
 export default router
-
-

@@ -6,18 +6,19 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
-import CrimeCard from "../components/CrimeCard.vue";
+import { ref, onMounted } from 'vue'
+import CrimeCard from '../components/CrimeCard.vue'
 
-const crimes = ref([
-]);
+const crimes = ref([])
 
 onMounted(async () => {
   try {
-    const res = await fetch("https://data.cityofnewyork.us/resource/5ucz-vwe8.json");
-    const data = await res.json();
+    const res = await fetch('https://data.cityofnewyork.us/resource/5ucz-vwe8.json')
+    const data = await res.json()
 
-    crimes.value = data;
-  } catch (err) { console.log(err); }
-});
+    crimes.value = data
+  } catch (err) {
+    console.log(err)
+  }
+})
 </script>
