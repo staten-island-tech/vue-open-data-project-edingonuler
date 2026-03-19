@@ -11,7 +11,7 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/',
+      path: '/apidata',
       name: 'apidata',
       component: ApiData,
     },
@@ -20,4 +20,4 @@ const router = createRouter({
 
 export default router
 
-// https://data.cityofnewyork.us/resource/5ucz-vwe8.json
+
