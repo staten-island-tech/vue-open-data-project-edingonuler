@@ -1,5 +1,5 @@
 <script setup>
-// import BarChart from 'path/to/component/BarChart'
+import BarChart from '@/component/BarChart.vue'
 </script>
 
 <template>
