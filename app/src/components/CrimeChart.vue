@@ -1,5 +1,7 @@
 <template>
+  <div class="chart-container">
   <canvas ref="chartCanvas"></canvas>
+  </div>
 </template>
 
 <script setup>
@@ -79,3 +81,11 @@ watch(
   { deep: true }
 )
 </script>
+
+<style>
+.chart-container {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+</style>
